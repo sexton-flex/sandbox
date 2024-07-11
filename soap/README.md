@@ -25,7 +25,7 @@ Not all 20 videos are required, but I highly recommend the first 5.
 
 ## How to run the script?
 
-- Before running the script, we have to do the following:
+Before running the script, we have to do the following:
 
 ### Extract Public/Private Keys from P12 Certificate
 
