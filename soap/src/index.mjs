@@ -37,7 +37,6 @@ const submitAttachment = async (requestName) => {
 
   // Get request args
   const args = getRequestArgs(requestName);
-  console.log("Request args:", args);
 
   // Make request
   console.log(
