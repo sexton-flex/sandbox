@@ -3,9 +3,9 @@ import soap from "soap";
 import { CombinedRequests } from "./requests/index.mjs";
 
 // Resource paths
-const urlPath = `${process.cwd()}/resources/wsdl/mi-web-service-jbms.wsdl`;
-const privateKeyPath = `${process.cwd()}/resources/certificate/private.key`;
-const certificatePath = `${process.cwd()}/resources/certificate/certificate.cer`;
+const urlPath = `${process.cwd()}/src/resources/wsdl/mi-web-service-jbms.wsdl`;
+const privateKeyPath = `${process.cwd()}/src/resources/certificate/private.key`;
+const certificatePath = `${process.cwd()}/src/resources/certificate/certificate.cer`;
 
 const clientOptions = {
   endpoint: process.env.ENDPOINT,

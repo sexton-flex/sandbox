@@ -2,7 +2,7 @@
   "name": "mms-strong-soap",
   "version": "1.0.0",
   "description": "Test requests to MMS in NodeJS environment",
-  "main": "index.mjs",
+  "main": "src/index.mjs",
   "scripts": {
     "test": "npm run test"
   },
