@@ -1,8 +1,8 @@
 import { baseArgs } from "../../constants/index.mjs";
 
-export class MPMarkets {
+export class MPMarket {
   constructor() {
-    this.name = "mpMarkets";
+    this.name = "mpMarket";
     this.requestType = "mp.market";
     this.partialArgs = { requestType: this.requestType, ...baseArgs }; // Order of request args matters
     this.requests = [
