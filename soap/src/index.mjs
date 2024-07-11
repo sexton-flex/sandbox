@@ -11,7 +11,7 @@ const clientOptions = {
   endpoint: process.env.ENDPOINT,
 };
 
-const getArgs = (requestName) => {
+const getRequestArgs = (requestName) => {
   const combinedRequests = new CombinedRequests();
   const { fn, lib } = combinedRequests.requests.find(
     ({ name }) => name === requestName
@@ -36,7 +36,7 @@ const submitAttachment = async (requestName) => {
   console.log("Contract description:", JSON.stringify(description));
 
   // Get request args
-  const args = getArgs(requestName);
+  const args = getRequestArgs(requestName);
   console.log("Request args:", args);
 
   // Make request
