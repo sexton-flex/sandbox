@@ -4,7 +4,7 @@
 
 This soap sub-repo is to play around and learn SOAP with different implementations.
 
-## Resources
+## Basics
 
 [SOAP Web Services Basics](https://www.youtube.com/watch?v=dQw4w9WgXcQ) is a great YouTube playlist to get started with SOAP Web Services. It will explain:
 
@@ -21,4 +21,10 @@ Not all 20 videos are required, but I highly recommend the first 5.
 2. Creating a SOAP client.
 3. Add PFX Certificate to the client options.
 4. Describing the WSDL ontract using the `soap` package.
-5. Logging the request and response as JSON.
+5. Logging the request and response in a readable format.
+
+## Tools
+
+- [NodeSoap Docs](https://github.com/vpulim/node-soap)
+- Base64 [Encode](https://www.base64encode.org/)/[Decode](https://www.base64decode.org/)
+- [Extracting Public/Private key from .p12 certificate](https://www.cisco.com/c/en/us/support/docs/security/web-security-appliance/118339-technote-wsa-00.html)
