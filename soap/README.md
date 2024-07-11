@@ -61,4 +61,5 @@ npm start --requestName "ms-offer-data"
 
 - [NodeSoap Docs](https://github.com/vpulim/node-soap)
 - Base64 [Encode](https://www.base64encode.org/)/[Decode](https://www.base64decode.org/)
+- [XML Editor](https://www.tutorialspoint.com/online_xml_editor.htm)
 - [Extracting Public/Private key from .p12 certificate](https://www.cisco.com/c/en/us/support/docs/security/web-security-appliance/118339-technote-wsa-00.html)
