@@ -21,7 +21,7 @@ const getArgs = (requestName) => {
   return args;
 };
 
-const submitAttachment = async (requestName = "ms-offer-data") => {
+const submitAttachment = async (requestName) => {
   console.log("Creating client..\n");
   const client = await soap.createClientAsync(urlPath, clientOptions);
 
@@ -58,4 +58,7 @@ const submitAttachment = async (requestName = "ms-offer-data") => {
   );
 };
 
-submitAttachment().catch((error) => console.error(error));
+const args = process.argv.slice(2);
+const requestNameIndex = args.indexOf("--requestName");
+const requestName = args[requestNameIndex + 1];
+submitAttachment(requestName).catch((error) => console.error(error));
