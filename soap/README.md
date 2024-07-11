@@ -54,7 +54,7 @@ Run the following commands to run the script:
 npm install
 
 # Run script
-node index.mjs
+npm start --requestName "ms-offer-data"
 ```
 
 ## Tools
