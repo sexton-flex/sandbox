@@ -1,6 +1,6 @@
 import "dotenv/config";
 import soap from "soap";
-import { CombinedRequests } from "./requests/index.mjs";
+import { CombinedRequests } from "./lib/requests/index.mjs";
 
 // Resource paths
 const urlPath = `${process.cwd()}/src/resources/wsdl/mi-web-service-jbms.wsdl`;

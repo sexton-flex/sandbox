@@ -1,4 +1,4 @@
-import { baseArgs } from "../../constants/index.mjs";
+import { baseArgs } from "../../../constants/index.mjs";
 
 export class MPMarket {
   constructor() {
