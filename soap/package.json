@@ -1,0 +1,13 @@
+{
+  "name": "mms-strong-soap",
+  "version": "1.0.0",
+  "description": "Test requests to MMS in NodeJS environment",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "soap": "^1.0.4"
+  }
+}
