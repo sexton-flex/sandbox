@@ -36,14 +36,14 @@ const submitAttachment = async (requestName) => {
   console.log("Contract description:", JSON.stringify(description));
 
   // Get request args
-  const args = getRequestArgs(requestName);
+  const requestArgs = getRequestArgs(requestName);
 
   // Make request
   console.log(
     `\nMaking ${requestName} request using submitAttachment WSDL action with args:`
   );
-  console.log(args, "\n");
-  const response = await client.submitAttachmentAsync(args);
+  console.log(requestArgs, "\n");
+  const response = await client.submitAttachmentAsync(requestArgs);
 
   // Log out response
   console.log("submitAttachment response:", response);
