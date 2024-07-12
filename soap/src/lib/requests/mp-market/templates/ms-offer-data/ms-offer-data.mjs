@@ -1,10 +1,5 @@
-import fs from "fs";
+import { getMinifiedXML } from "../../../../utils/xml.mjs";
 
 const action = "ms-offer-data";
-const msOfferDataXML = fs.readFileSync(
-  `${process.cwd()}/src/lib/requests/mp-market/templates/${action}/${action}.xml`,
-  "utf8"
-);
-
-export const msOfferDataEncodedRequestData =
-  Buffer.from(msOfferDataXML).toString("base64");
+const path = `${process.cwd()}/src/lib/requests/mp-market/templates/${action}/${action}.xml`;
+export const msOfferDataEncodedRequestData = getMinifiedXML(path);
