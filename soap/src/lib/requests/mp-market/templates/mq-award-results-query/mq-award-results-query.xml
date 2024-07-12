@@ -1,0 +1,6 @@
+<MarketData>
+  <MarketQuery Date="2024-07-11" NumOfDays="1" ParticipantName="D057" UserName="TGUSERGE001">
+    <AwardResultsQuery  EndTime="2024-07-11T03:00:00" MarketType="DAM" StartTime="2024-07-11T00:00:00">
+    </AwardResultsQuery>
+  </MarketQuery>
+</MarketData>
