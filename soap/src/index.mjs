@@ -4,8 +4,6 @@ import { CombinedRequests } from "./lib/requests/index.mjs";
 
 // Resource paths
 const urlPath = `${process.cwd()}/src/resources/wsdl/mi-web-service-jbms.wsdl`;
-const privateKeyPath = `${process.cwd()}/src/resources/certificate/private.key`;
-const certificatePath = `${process.cwd()}/src/resources/certificate/certificate.cer`;
 
 const clientOptions = {
   endpoint: process.env.ENDPOINT,
@@ -25,11 +23,11 @@ const submitAttachment = async (requestName) => {
   console.log("Creating client..\n");
   const client = await soap.createClientAsync(urlPath, clientOptions);
 
-  const clientSSLSecurity = new soap.ClientSSLSecurity(
-    privateKeyPath,
-    certificatePath
+  const clientSSLSecurityPFX = new soap.ClientSSLSecurityPFX(
+    `${process.cwd()}/src/resources/certificate/EndUser.p12`,
+    process.env.PFX_PASSPHRASE
   );
-  client.setSecurity(clientSSLSecurity);
+  client.setSecurity(clientSSLSecurityPFX);
 
   console.log("Getting contract in JSON format..\n");
   const description = client.describe();
