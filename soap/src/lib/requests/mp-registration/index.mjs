@@ -17,11 +17,12 @@ export class MPRegistration {
   /**
    *
    * RegistrationQuery_User
-   * Requires Email attribute in User xml tag.
+   * Requires Digital Signature to process the request.
    * Cannot finish this query.
    */
   getRegistrationQueryUserArgs = () => ({
     ...this.partialArgs,
-    requestData: "",
+    requestData:
+      "PFJlZ2lzdHJhdGlvbkRhdGE+Cgk8UmVnaXN0cmF0aW9uU3VibWl0PgoJICAgIDxVc2VyIFBhcnRpY2lwYW50TmFtZT0iRjEwMCIgVXNlck5hbWU9IkZBS0VVU0VSIiBTdGFydERhdGU9IjIwMjAtMDEtMDEiIEVtYWlsPSJGQUtFQGdtYWlsLmNvbSI+CgkgICAgPC9Vc2VyPgoJPC9SZWdpc3RyYXRpb25TdWJtaXQ+CjwvUmVnaXN0cmF0aW9uRGF0YT4=",
   });
 }
