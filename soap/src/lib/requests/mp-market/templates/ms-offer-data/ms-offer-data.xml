@@ -1,7 +1,9 @@
 <MarketData>
-	<MarketSubmit Date="2024-07-11" MarketType="DAM" NumOfDays="1" ParticipantName="F100" UserName="FAKEUSER">
-		<OfferData Direction="1" EndTime="2024-03-15T21:00:00" ResourceName="FAKE_RESO" StartTime="2024-03-15T12:00:00">
-			<OfferStack MinimumQuantityInKw="100" OfferUnitPrice="100" StackNumber="1"></OfferStack>
-		</OfferData>
-	</MarketSubmit>
+  <MarketSubmit Date="2024-07-11" MarketType="DAM" NumOfDays="1" ParticipantName="D057"
+    UserName="TGUSERGE001">
+    <OfferData Direction="1" EndTime="2024-03-15T21:00:00" ResourceName="FAKE_RESO"
+      StartTime="2024-03-15T12:00:00">
+      <OfferStack MinimumQuantityInKw="100" OfferUnitPrice="100" StackNumber="1"></OfferStack>
+    </OfferData>
+  </MarketSubmit>
 </MarketData>

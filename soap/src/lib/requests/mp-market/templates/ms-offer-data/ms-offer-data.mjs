@@ -1,7 +1,8 @@
 import fs from "fs";
 
+const action = "ms-offer-data";
 const msOfferDataXML = fs.readFileSync(
-  `${process.cwd()}/src/lib/requests/mp-market/templates/ms-offer-data/ms-offer-data.xml`,
+  `${process.cwd()}/src/lib/requests/mp-market/templates/${action}/${action}.xml`,
   "utf8"
 );
 
