@@ -1,4 +1,6 @@
 import { baseArgs } from "../../../constants/index.mjs";
+import { getSignedRequestData } from "../../utils/index.mjs";
+import { mqAwardResultsQueryRequestData } from "./templates/mq-award-results-query/mq-award-results-query.mjs";
 import { msOfferDataEncodedRequestData } from "./templates/ms-offer-data/ms-offer-data.mjs";
 
 export class MPMarket {
@@ -8,6 +10,11 @@ export class MPMarket {
     this.partialArgs = { requestType: this.requestType, ...baseArgs }; // Order of request args matters
     this.requests = [
       { fn: "getMsOfferDataArgs", lib: this.name, name: "ms-offer-data" },
+      {
+        fn: "getMqAwardResultsQueryArgs",
+        lib: this.name,
+        name: "mq-award-results-query",
+      },
     ];
   }
 
@@ -19,6 +26,17 @@ export class MPMarket {
    */
   getMsOfferDataArgs = () => ({
     ...this.partialArgs,
+    requestSignature: getSignedRequestData(msOfferDataEncodedRequestData),
     requestData: msOfferDataEncodedRequestData,
+  });
+
+  /**
+   * MarketQuery_AwardResultsQuery
+   * Does not require requestSignature
+   * Successful
+   */
+  getMqAwardResultsQueryArgs = () => ({
+    ...this.partialArgs,
+    requestData: mqAwardResultsQueryRequestData,
   });
 }
