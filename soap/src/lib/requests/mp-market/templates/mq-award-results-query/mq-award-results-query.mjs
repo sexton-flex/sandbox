@@ -1,11 +1,5 @@
-import fs from "fs";
+import { getMinifiedXML } from "../../../../utils/xml.mjs";
 
 const action = "mq-award-results-query";
-const mqAwardResultsQueryXML = fs.readFileSync(
-  `${process.cwd()}/src/lib/requests/mp-market/templates/${action}/${action}.xml`,
-  "utf8"
-);
-
-export const mqAwardResultsQueryRequestData = Buffer.from(
-  mqAwardResultsQueryXML
-).toString("base64");
+const path = `${process.cwd()}/src/lib/requests/mp-market/templates/${action}/${action}.xml`;
+export const mqAwardResultsQueryRequestData = getMinifiedXML(path);
