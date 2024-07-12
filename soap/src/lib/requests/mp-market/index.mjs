@@ -10,7 +10,12 @@ export class MPMarket {
     ];
   }
 
-  // MarketSubmit_OfferData
+  /**
+   *
+   * MarketSubmit_OfferData
+   * Digital signature is mandatory for this type of submission
+   * Cannot finish this query.
+   */
   getMsOfferDataArgs = () => ({
     ...this.partialArgs,
     requestData:

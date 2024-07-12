@@ -14,7 +14,11 @@ export class MPReport {
     ];
   }
 
-  // ReportListRequest
+  /**
+   * ReportListRequest
+   * Response is successful, however contains error saying we are using the wrong certificate.
+   * I am not sure what this means..
+   */
   getReportListArgs = () => ({
     ...this.partialArgs,
     requestData:
