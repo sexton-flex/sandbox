@@ -1,5 +1,5 @@
 import { baseArgs } from "../../../constants/index.mjs";
-import { getSignedRequestData } from "../../utils/index.mjs";
+import { getSignedRequestData } from "../../utils/signature.mjs";
 import { mqAwardResultsQueryRequestData } from "./templates/mq-award-results-query/mq-award-results-query.mjs";
 import { msOfferDataEncodedRequestData } from "./templates/ms-offer-data/ms-offer-data.mjs";
 
