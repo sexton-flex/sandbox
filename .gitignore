@@ -2,6 +2,7 @@
 *.key
 *.cer
 *.p12
+*.pem
 
 # Logs
 logs
