@@ -6,7 +6,7 @@ This soap sub-repo is to play around and learn SOAP with different implementatio
 
 ## Basics
 
-[SOAP Web Services Basics](https://www.youtube.com/watch?v=dQw4w9WgXcQ) is a great YouTube playlist to get started with SOAP Web Services. It will explain:
+[SOAP Web Services Basics](https://youtube.com/playlist?list=PLqq-6Pq4lTTZTYpk_1DOowOGWJMIH5T39&si=BBOVeDqlB79r9jp8) is a great YouTube playlist to get started with SOAP Web Services. It will explain:
 
 - Overview of what SOAP web services are.
 - Common SOAP jargon.
