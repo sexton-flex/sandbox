@@ -45,6 +45,49 @@ npm install
 npm start --requestName "mq-award-results-query"
 ```
 
+## Contributions
+
+Add your own MMS request action by following these instructions:
+
+### Identify request type
+
+Request types fall under the following:
+
+- `mp.info`
+- `mp.market`
+- `mp.registration`
+
+This will determine where we can our template. These folders can be found under:
+`src/lib/requests/`
+
+### Add folder structure and .xml/.mjs files
+
+Define your request name. Example: `mq-award-results-query`.
+Add the following structure:
+
+- Folder within templates using the defined request name.
+- Within that folder, add a `.xml` and `.mjs` file named using the defined request name.
+- Define XML for your request in the `.xml` file
+- Copy an existing template `.mjs` file and update the relevant details.
+
+### Update Request Type Class
+
+We map the request action name to a function that gets the relevant arguments which will be used in the request to MMS.
+
+We will still use the `mq-award-results-query` example which is a `mp.market` request type.
+
+1. Navigate to `src/lib/requests/mp-market/index.mjs`.
+2. Add request object mapping to the class's requests list:
+
+   `{ fn: "<FUNCTION_NAME>", lib: this.name, name: "<YOUR_DEFINED_REQUEST_NAME>" }`
+
+3. Add function following the same pattern as the other functions.
+   - Depending on your request, a digital signature might be required.
+
+### Running the script
+
+`npm start --requestName "<YOUR_DEFINED_REQUEST_NAME>"`
+
 ## Tools
 
 - [NodeSoap Docs](https://github.com/vpulim/node-soap)
