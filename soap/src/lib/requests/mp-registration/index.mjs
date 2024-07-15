@@ -1,4 +1,6 @@
 import { baseArgs } from "../../../constants/index.mjs";
+import { getSignedRequestData } from "../../utils/signature.mjs";
+import { rqUserRequestData } from "./templates/rq-user/rq-user.mjs";
 
 export class MPRegistration {
   constructor() {
@@ -9,7 +11,7 @@ export class MPRegistration {
       {
         fn: "getRegistrationQueryUserArgs",
         lib: this.name,
-        name: "mp-registration-query-user",
+        name: "rq-user",
       },
     ];
   }
@@ -17,12 +19,12 @@ export class MPRegistration {
   /**
    *
    * RegistrationQuery_User
-   * Requires Digital Signature to process the request.
+   * Digital signature verification failed.
    * Cannot finish this query.
    */
   getRegistrationQueryUserArgs = () => ({
     ...this.partialArgs,
-    requestData:
-      "PFJlZ2lzdHJhdGlvbkRhdGE+Cgk8UmVnaXN0cmF0aW9uU3VibWl0PgoJICAgIDxVc2VyIFBhcnRpY2lwYW50TmFtZT0iRjEwMCIgVXNlck5hbWU9IkZBS0VVU0VSIiBTdGFydERhdGU9IjIwMjAtMDEtMDEiIEVtYWlsPSJGQUtFQGdtYWlsLmNvbSI+CgkgICAgPC9Vc2VyPgoJPC9SZWdpc3RyYXRpb25TdWJtaXQ+CjwvUmVnaXN0cmF0aW9uRGF0YT4=",
+    requestSignature: getSignedRequestData(rqUserRequestData),
+    requestData: rqUserRequestData,
   });
 }
