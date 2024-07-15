@@ -1,4 +1,5 @@
 import { baseArgs } from "../../../constants/index.mjs";
+import { reportListRequestData } from "./templates/report-list-request/report-list-request.mjs";
 
 export class MPReport {
   constructor() {
@@ -9,7 +10,7 @@ export class MPReport {
       {
         fn: "getReportListArgs",
         lib: this.name,
-        name: "mp-report-report-list",
+        name: "report-list-request",
       },
     ];
   }
@@ -17,11 +18,10 @@ export class MPReport {
   /**
    * ReportListRequest
    * Response is successful, however contains error saying we are using the wrong certificate.
-   * I am not sure what this means..
+   * TODO: Update xml attributes and order alphabetically.
    */
   getReportListArgs = () => ({
     ...this.partialArgs,
-    requestData:
-      "PE1hcmtldFJlcG9ydCBQYXJ0aWNpcGFudE5hbWU9IkYxMDAiIEFwcGxpY2F0aW9uVHlwZT0iTUFSS0VUX1JFUE9SVCI+Cgk8UmVwb3J0TGlzdFJlcXVlc3QgUmVwb3J0VHlwZT0iUkVHSVNUUkFUSU9OIiBSZXBvcnRTdWJUeXBlPSJSRVNPVVJDRSIgUGVyaW9kaWNpdHk9Ik9OX0RFTUFORCIgRGF0ZT0iMjAyNC0wNy0xMSI+Cgk8L1JlcG9ydExpc3RSZXF1ZXN0Pgo8L01hcmtldFJlcG9ydD4=",
+    requestData: reportListRequestData,
   });
 }
