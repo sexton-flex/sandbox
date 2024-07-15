@@ -20,7 +20,7 @@ export class MPRegistration {
    *
    * RegistrationQuery_User
    * Digital signature verification failed.
-   * TODO: Update xml attributes and order alphabetically.
+   * Requires Email attribute. No email currently provided.
    */
   getRegistrationQueryUserArgs = () => ({
     ...this.partialArgs,
