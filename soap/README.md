@@ -42,7 +42,7 @@ Run the following commands to run the script:
 npm install
 
 # Run script
-npm start --requestName "ms-offer-data"
+npm start --requestName "mq-award-results-query"
 ```
 
 ## Tools
