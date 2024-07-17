@@ -3,6 +3,7 @@ import { getSignedRequestData } from "../../utils/signature.mjs";
 import { mqAwardResultsQueryRequestData } from "./templates/mq-award-results-query/mq-award-results-query.mjs";
 import { mqOfferQueryRequestData } from "./templates/mq-offer-query/mq-offer-query.mjs";
 import { msOfferDataEncodedRequestData } from "./templates/ms-offer-data/ms-offer-data.mjs";
+import { msRemainingReserveDataRequestData } from "./templates/ms-remaining-reserve-data/ms-remaining-reserve-data.mjs";
 import { msSwitchRequestData } from "./templates/ms-switch/ms-switch.mjs";
 
 export class MPMarket {
@@ -20,6 +21,11 @@ export class MPMarket {
       { fn: "getMqOfferQueryArgs", lib: this.name, name: "mq-offer-query" },
       { fn: "getMsBupSubmitArgs", lib: this.name, name: "ms-bup-submit" },
       { fn: "getMsSwitchArgs", lib: this.name, name: "ms-switch" },
+      {
+        fn: "getMsRemainingReserveDataArgs",
+        lib: this.name,
+        name: "ms-remaining-reserve-data",
+      },
     ];
   }
 
@@ -68,5 +74,13 @@ export class MPMarket {
   getMsSwitchArgs = () => ({
     ...this.partialArgs,
     requestData: msSwitchRequestData,
+  });
+
+  /**
+   * MarketSubmit_RemainingReserveData
+   */
+  getMsRemainingReserveDataArgs = () => ({
+    ...this.partialArgs,
+    requestData: msRemainingReserveDataRequestData,
   });
 }
