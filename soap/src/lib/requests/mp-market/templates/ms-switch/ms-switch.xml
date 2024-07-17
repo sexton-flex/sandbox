@@ -1,0 +1,16 @@
+<MarketData>
+    <MarketSubmit Date="" ParticipantName="D057" UserName="TGUSERGE001">
+        <Switch StartTime="" EndTime="">
+            <TielineDatalist>
+                <TielineChange InterconEquipment="">
+                    <TielineChangeData CommodityCategory="">
+                    </TielineChangeData>
+                </TielineChange>
+            </TielineDatalist>
+            <Source JbmsId="">
+                <Destination DestinationType="">
+                </Destination>
+            </Source>
+        </Switch>
+    </MarketSubmit>
+</MarketData>
