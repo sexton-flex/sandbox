@@ -1,0 +1,22 @@
+<MarketData>
+    <MarketSubmit Date="" ParticipantName="D057" UserName="TGUSERGE001">
+        <StandingData StandingFlag="">
+        </StandingData>
+        <BupSubmit EndTime="" ResourceName="" StartTime="">
+            <PatternData PatternNo="" PatternStatus="">
+                <Bup>
+                    <BandBup Band="" FromCap="" V1="">
+                    </BandBup>
+                </Bup>
+                <Abc>
+                    <BandAbc Band="" FromCap="" a="" b="" c="">
+                    </BandAbc>
+                </Abc>
+                <StartupCost>
+                    <BandStartup CaseNo="" StopTime="" V3="">
+                    </BandStartup>
+                </StartupCost>
+            </PatternData>
+        </BupSubmit>
+    </MarketSubmit>
+</MarketData>

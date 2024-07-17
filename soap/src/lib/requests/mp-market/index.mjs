@@ -17,6 +17,7 @@ export class MPMarket {
         name: "mq-award-results-query",
       },
       { fn: "getMqOfferQueryArgs", lib: this.name, name: "mq-offer-query" },
+      { fn: "getMsBupSubmitArgs", lib: this.name, name: "ms-bup-submit" },
     ];
   }
 
@@ -49,5 +50,13 @@ export class MPMarket {
     ...this.partialArgs,
     // requestSignature: getSignedRequestData(msOfferDataEncodedRequestData),
     requestData: mqOfferQueryRequestData,
+  });
+
+  /**
+   * MarketSubmit_BupSubmit
+   */
+  getMsBupSubmitArgs = () => ({
+    ...this.partialArgs,
+    requestData: msBupSubmitRequestData,
   });
 }
