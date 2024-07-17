@@ -1,6 +1,6 @@
 <MarketData>
-    <MarketSubmit Date="" ParticipantName="D057" UserName="TGUSERGE001">
-        <RemainingReserveData EndTime="" ResourceName="" StartTime="">
+    <MarketSubmit Date="2024-03-09" ParticipantName="D057" UserName="TGUSERGE001">
+        <RemainingReserveData EndTime="2024-03-10T23:59:59" ResourceName="TGG_MBR" StartTime="024-03-10T00:00:00">
         </RemainingReserveData>
     </MarketSubmit>
 </MarketData>
