@@ -1,6 +1,6 @@
 <MarketData>
     <MarketSubmit Date="" ParticipantName="D057" UserName="TGUSERGE001">
-        <Switch StartTime="" EndTime="">
+        <Switch EndTime="" StartTime="">
             <TielineDatalist>
                 <TielineChange InterconEquipment="">
                     <TielineChangeData CommodityCategory="">

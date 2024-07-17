@@ -9,7 +9,7 @@
                     </BandBup>
                 </Bup>
                 <Abc>
-                    <BandAbc Band="" FromCap="" a="" b="" c="">
+                    <BandAbc a="" b="" Band="" c="" FromCap="" >
                     </BandAbc>
                 </Abc>
                 <StartupCost>
