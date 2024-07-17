@@ -1,9 +1,9 @@
 <MarketData>
     <MarketSubmit Date="" ParticipantName="D057" UserName="TGUSERGE001">
-        <StandingData StandingFlag="">
+        <StandingData StandingFlag="true">
         </StandingData>
-        <BupSubmit EndTime="" ResourceName="" StartTime="">
-            <PatternData PatternNo="" PatternStatus="">
+        <BupSubmit EndTime="" ResourceName="TGG_MBR" StartTime="">
+            <PatternData PatternNo="" PatternStatus="1">
                 <Bup>
                     <BandBup Band="" FromCap="" V1="">
                     </BandBup>
