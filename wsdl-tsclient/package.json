@@ -1,0 +1,20 @@
+{
+  "name": "mms-wsdl-tsclient",
+  "version": "1.0.0",
+  "description": "Test requests to MMS in NodeJS environment using wsdl-tsclient",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && node src/index.mjs",
+    "test": "npm run test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "soap": "^1.1.0",
+    "wsdl-tsclient": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.3"
+  }
+}
